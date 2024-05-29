@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', '')
-API_ID = int(environ.get('API_ID', '23284507'))
-API_HASH = environ.get('API_HASH', 'f45ec40aecce4d5cf84cc8ec7855e582')
+API_ID = int(environ.get('API_ID', '12258697'))
+API_HASH = environ.get('API_HASH', 'f61d846f710798e68bb4e163a0600bae')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7002415163:AAGvcf4bAk8E8pIqQZKi2TdE8euVPEGOidE")
 
 # Bot settings
@@ -31,8 +31,8 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002029105832'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1242855376').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001582702315 -1001441207923').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1242855376 6322229420').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001582702315').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
